@@ -168,10 +168,13 @@ h2 {
     background-color: #f8f
 }
 
-.project .img {
-    width: 100%; /* Make the image take full width */
-    height: 100%; /* Optional: Ensure the image covers the container */
-    object-fit: cover; /* Ensures the image scales properly */
+.project img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Image takes full width of container */
+    height: 100%; /* Image takes full height of container */
+    object-fit: cover; /* Ensures image scales proportionally to fill the container */
 }
 
 .project .content {
