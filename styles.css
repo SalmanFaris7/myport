@@ -164,17 +164,14 @@ h2 {
 
 .project {
     flex: 1;
-    min-width: 300px;
+    max-width: 300px;
     background-color: #f8f
 }
 
-.project .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the image take the full width of the container */
-    height: 100%; /* Make the image take the full height of the container */
-    object-fit: cover; /* Ensures the image scales proportionally without leaving gaps */
+.project img {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Optional: Ensure the image covers the container */
+    object-fit: cover; /* Ensures the image scales properly */
 }
 
 .project .content {
