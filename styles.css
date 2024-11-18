@@ -165,14 +165,18 @@ h2 {
 .project {
     position: relative;
     width: 100%; /* Full width of the container */
-    max-width: 600px; /* Optional: Restrict maximum width */
+    height: 300px; /* Set the desired height for the project container */
+    background-color: pink; /* Set the background color */
     overflow: hidden; /* Prevent content overflow */
 }
 
 .project img {
-    width: 100%; /* Make the image take full width */
-    height: 100%; /* Optional: Ensure the image covers the container */
-    object-fit: cover; /* Ensures the image scales properly */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image take the full width of the container */
+    height: 100%; /* Make the image take the full height of the container */
+    object-fit: cover; /* Ensures the image scales proportionally without leaving gaps */
 }
 
 .project .content {
@@ -180,11 +184,11 @@ h2 {
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust to exact center */
-    color: white; /* White text for contrast */
+    color: black; /* Text color for better readability */
     text-align: center; /* Center-align the text */
-    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
+    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background */
     padding: 20px; /* Add padding around the content */
-    border-radius: 10px; /* Optional: Round corners */
+    border-radius: 10px; /* Optional: Round the corners */
 }
 
 .project .btn {
