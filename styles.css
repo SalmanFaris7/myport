@@ -163,6 +163,42 @@ h2 {
 }
 
 .project {
-    flex: 1;
-    min-width: 300px;
-    background-color: #f8f
+    position: relative;
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Optional: Restrict maximum width */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.project img {
+    width: 100%; /* Make the image take full width */
+    height: 100%; /* Optional: Ensure the image covers the container */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+
+.project .content {
+    position: absolute; /* Layer the content over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to exact center */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center-align the text */
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 10px; /* Optional: Round corners */
+}
+
+.project .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff; /* Button color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
