@@ -177,6 +177,7 @@ h2 {
     width: 100%; /* Image takes full width of container */
     height: 100%; /* Image takes full height of container */
     object-fit: cover; /* Ensures image scales proportionally to fill the container */
+    z-index: 0;
 }
 
 .project .content {
@@ -189,6 +190,7 @@ h2 {
     background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     padding: 15px; /* Add padding around the content */
     border-radius: 8px; /* Optional: round the corners */
+    z-index: 1;
 }
 
 .project .btn {
