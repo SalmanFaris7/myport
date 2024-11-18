@@ -163,8 +163,47 @@ h2 {
 }
 
 .project {
-    flex: 1;
-    min-width: 300px;
-    background-color: #f8f
+    position: relative;
+    width: 100%; /* Full width */
+    height: 300px; /* Set the height of the container */
+    background-color: pink; /* Background color in case the image doesn't load */
+    overflow: hidden; /* Prevent image overflow */
 }
+
+.project .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Image takes full width of container */
+    height: 100%; /* Image takes full height of container */
+    object-fit: cover; /* Ensures image scales proportionally to fill the container */
+}
+
+.project .content {
+    position: absolute; /* Layer content over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to the exact center */
+    color: black; /* Set content text color */
+    text-align: center; /* Center-align text */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 15px; /* Add padding around the content */
+    border-radius: 8px; /* Optional: round the corners */
+}
+
+.project .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff; /* Button color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Round the corners */
+    transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 
