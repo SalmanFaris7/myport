@@ -163,11 +163,9 @@ h2 {
 }
 
 .project {
-    position: relative;
-    max-width: 300px; /* Full width of the container */
-    height: 300px; /* Set the desired height for the project container */
-    background-color: pink; /* Set the background color */
-    overflow: hidden; /* Prevent content overflow */
+    flex: 1;
+    min-width: 300px;
+    background-color: #f8f
 }
 
 .project .img {
