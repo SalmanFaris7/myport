@@ -170,7 +170,7 @@ h2 {
     overflow: hidden; /* Prevent content overflow */
 }
 
-.project img {
+.project.img {
     position: absolute;
     top: 0;
     left: 0;
