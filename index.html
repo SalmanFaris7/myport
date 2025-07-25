@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salmanul Faris | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Add any external stylesheets or icons you might need -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -16,6 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -41,28 +42,98 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm Salmanul Faris, a Fullstack Developer with a focus on creating intuitive and dynamic web applications. With experience in leading teams and developing e-commerce solutions, I am always excited about new challenges and opportunities to innovate.</p>
+            <p>I'm Salmanul Faris, a Fullstack Developer with expertise in Machine Learning, Data Science, and Web Development. I specialize in creating intuitive applications powered by AI and modern web technologies. With experience in leading teams and developing e-commerce solutions, I am always excited about new challenges and opportunities to innovate.</p>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill">
-                    <h3>JavaScript</h3>
-                    <p>Experienced in ES6+, Node.js, React.js, and building interactive web applications.</p>
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Neural Networks, Vision Transformers, NLP (BERT, LLAMA), Deep Learning, Model Optimization</p>
                 </div>
                 <div class="skill">
-                    <h3>HTML & CSS</h3>
-                    <p>Proficient in modern HTML, CSS, and CSS frameworks like Bootstrap and Tailwind.</p>
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Science</h3>
+                    <p>Data Analysis, Predictive Modeling, Time Series, Statistical Methods, ETL, Apache Kafka, Airflow</p>
                 </div>
                 <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases & SQL</h3>
+                    <p>MySQL, PostgreSQL, SQL Server, Query Optimization, Indexing, Stored Procedures</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, Java, SQL, ReactJS, MATLAB, C++</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-tools"></i>
+                    <h3>Tools & Frameworks</h3>
+                    <p>Git, Agile, TensorFlow, PyTorch, Android Studio, VSCode, Qt Creator</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-server"></i>
                     <h3>Backend Development</h3>
-                    <p>Strong skills in backend development using Node.js, Express, and RESTful APIs.</p>
+                    <p>Node.js, Express, RESTful APIs, Microservices Architecture</p>
                 </div>
-                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2025 - July 2025</div>
+                    <div class="timeline-content">
+                        <h3>Independent Developer</h3>
+                        <h4>AI-Powered Applications for Upper Clapton and Homerton Nurseries</h4>
+                        <ul>
+                            <li>Built AI-powered app to automate student form scanning and data entry, reducing manual input time by 30 minutes to 2 minutes or less</li>
+                            <li>Developed secure Firebase data storage and authentication methods for efficient staff and student data management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">November 2024 - January 2025</div>
+                    <div class="timeline-content">
+                        <h3>Project Consultant and Lead Developer</h3>
+                        <h4>Customized System Development</h4>
+                        <ul>
+                            <li>Primary consultant analyzing business needs and defining system requirements for A2A services</li>
+                            <li>Delivered tailored website solution exceeding client expectations and enhancing overall satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">September 2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3>AI Model Optimizer (AI Outlier)</h3>
+                        <h4>Part-time Position</h4>
+                        <ul>
+                            <li>Train next-generation AI chatbots in coding tasks across Python, C, and SQL</li>
+                            <li>Design problem-solving scenarios to enhance AI performance and refine responses for accuracy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2023</div>
+                    <div class="timeline-content">
+                        <h3>Umbraco Intern Developer</h3>
+                        <h4>Web Development</h4>
+                        <ul>
+                            <li>Developed features on web applications built on Umbraco for E-commerce sites</li>
+                            <li>Worked with platforms like <a href="https://www.royalyachtbritannia.co.uk/" target="_blank">Royal Yacht Britannia</a> and <a href="https://www.sunsiyam.com/" target="_blank">Sunsiyam</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -70,23 +141,105 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project" style="background-image: url('images/gemDetector.jpg');>
-                    <div class="content">
-                        <h3>Gem Detector</h3>
-                        <p>● Trained mathematical models to classify and name gems using Stochastic Gradient Decent (SGD), Convolutional Neural Networks, and Linear Regression Time Series algorithms.</p>
-                        <p>● Used the trained model on an android app using the live camera.</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
                 <div class="project">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>Brief description of the project. Technologies used: Vue.js, Firebase, CSS3.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Neural Network from Scratch</h3>
+                    <p>Implemented double layer neural networks using basic equations including backpropagation, gradient descent (SGD, Batch, Mini-batch), and various learning rate optimizations.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NumPy</span>
+                        <span>Deep Learning</span>
+                    </div>
+                    <a href="#" class="btn-project">View Details</a>
                 </div>
-                <!-- Add more projects as needed -->
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Machine Learning for Alzheimer's Disease</h3>
+                    <p>Designed and trained Vision Transformers and CNNs to identify Alzheimer's disease with up to 85% accuracy. Conducted experiments to optimize model performance.</p>
+                    <div class="project-tech">
+                        <span>TensorFlow</span>
+                        <span>Vision Transformers</span>
+                        <span>Medical AI</span>
+                    </div>
+                    <a href="#" class="btn-project">View Research</a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Hate Speech Detection Models</h3>
+                    <p>Developed ML models including BERT to detect hate speech in Twitter dataset, achieving accuracy of over 95%. Conducted experiments for early disease detection.</p>
+                    <div class="project-tech">
+                        <span>NLP</span>
+                        <span>BERT</span>
+                        <span>Python</span>
+                    </div>
+                    <a href="#" class="btn-project">View Project</a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <h3>Weather Application</h3>
+                    <p>Created a weather app using React, JSX, CSS, and Weather API in VSCode for forecasts and weather information with React and API integration proficiency.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>API Integration</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <a href="#" class="btn-project">Live Demo</a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Gem Detector</h3>
+                    <p>Trained mathematical models to classify and name gems using SGD, CNNs, and Linear Regression Time Series algorithms. Integrated with Android app using live camera.</p>
+                    <div class="project-tech">
+                        <span>Computer Vision</span>
+                        <span>Android</span>
+                        <span>ML</span>
+                    </div>
+                    <a href="#" class="btn-project">View Demo</a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>POS Application</h3>
+                                        <p>Built a POS application using Java, Android Studio, and Google Maps API to record transactions and display shop locations with practical business solutions.</p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Android Studio</span>
+                        <span>Google Maps API</span>
+                    </div>
+                    <a href="#" class="btn-project">View App</a>
+                </div>
+                
+                <div class="project">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Visualization Suite</h3>
+                    <p>Developed multiple apps (SMS, Periodic table, Search, Restaurant, Recipe, Photo Editor) implementing various data structures and sorting algorithms.</p>
+                    <div class="project-tech">
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>Java</span>
+                    </div>
+                    <a href="#" class="btn-project">View Collection</a>
+                </div>
             </div>
         </div>
     </section>
@@ -94,9 +247,22 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you're interested in working together or have any questions, feel free to reach out!</p>
-            <a href="mailto:salman@example.com" class="btn">Email Me</a>
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+            <div class="contact-methods">
+                <a href="mailto:salman@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://linkedin.com/in/salmanulfaris" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/salmanulfaris" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -105,13 +271,13 @@
         <div class="container">
             <p>&copy; 2024 Salmanul Faris. All Rights Reserved.</p>
             <div class="social-links">
-                <a href="#"><img src="images/github-50.png" alt="GitHub"></a>
-                <a href="#"><img src="images/linkedin-48.png" alt="LinkedIn"></a>
-                <!-- Add more social icons as needed -->
+                <a href="https://github.com/salmanulfaris"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/salmanulfaris"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/salmanulfaris"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Add any necessary JavaScript files -->
+    <script src="script.js"></script>
 </body>
 </html>
